@@ -29,8 +29,12 @@ function stick_admin_bar_to_bottom_css() {
 		bottom: 0;
 	}
 
-	#wpadminbar .quicklinks .menupop ul {
+	#wpadminbar .quicklinks .ab-sub-wrapper {
 		bottom: 28px;
+	}
+
+	#wpadminbar .quicklinks .ab-sub-wrapper ul .ab-sub-wrapper {
+		bottom: -7px;
 	}
 	</style>
 	";
