@@ -1,10 +1,10 @@
 === Plugin Name ===
-Contributors: coenjacobs
-Donate link: http://cnjcbs.com/donate
+Contributors: CoenJacobs
+Donate link: http://coenjacobs.me/donate
 Tags: admin bar
 Requires at least: 3.1
-Tested up to: 3.1
-Stable tag: 1.0
+Tested up to: 3.3
+Stable tag: 1.1
 
 Annoyed by the new Admin Bar that is covering the top 28 pixels of your website, but you don't want it completely gone? This plugin sticks the Admin Bar to the bottom of your screen!
 
@@ -17,6 +17,7 @@ Annoyed by the new Admin Bar that is covering the top 28 pixels of your website,
 1. Upload `stick-admin-bar-to-bottom` folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Enjoy the Admin Bar at the bottom of the pages where it is shown
+
 == Frequently Asked Questions ==
 
 == Screenshots ==
@@ -24,6 +25,9 @@ Annoyed by the new Admin Bar that is covering the top 28 pixels of your website,
 1. Admin Bar at the bottom of the Twenty Ten theme
 
 == Changelog ==
+
+= 1.1 =
+* Updated CSS for WordPress 3.3 compatibility
 
 = 1.0 =
 * Complete rewrite of the CSS and now attached to footer to use cascading override feature of CSS (thanks to Ryan Fitzer)
