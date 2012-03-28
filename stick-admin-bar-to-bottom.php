@@ -3,7 +3,7 @@
 Plugin Name: Stick Admin Bar To Bottom
 Description: Annoyed by the new Admin Bar that is covering the top 28 pixels of your website, but you don't want it completely gone? This plugin sticks the Admin Bar to the bottom of your screen!
 Author: Coen Jacobs
-Version: 1.2
+Version: 1.1
 Author URI: http://coenjacobs.me
 */
 
