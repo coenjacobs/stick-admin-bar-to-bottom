@@ -8,38 +8,17 @@ Author URI: http://coenjacobs.me
 */
 
 function stick_admin_bar_to_bottom_css() {
-	echo "
-	<style type='text/css'>
-	* html body {
-        margin-top: 0 !important; 
-    }
-	
-	body.admin-bar {
-		margin-top: -28px;
-		padding-bottom: 28px;
-	}
-	
-	body.wp-admin #footer {
-		padding-bottom: 28px;
-	}
-	
-	#wpadminbar {
-		top: auto !important;
-		bottom: 0;
-	}
+	$version = get_bloginfo( 'version' );
 
-	#wpadminbar .quicklinks .ab-sub-wrapper {
-		bottom: 28px;
+	if ( version_compare( $version, '3.3', '<' ) ) {
+		$css_file = 'wordpress-3-1.css';
+	} else {
+		$css_file = 'wordpress-3-3.css';
 	}
-
-	#wpadminbar .quicklinks .ab-sub-wrapper ul .ab-sub-wrapper {
-		bottom: -7px;
-	}
-	</style>
-	";
+	wp_enqueue_style( 'stick-admin-bar-to-bottom', plugins_url( 'css/' . $css_file, __FILE__ ) );
 }
 
-add_action('admin_head', 'stick_admin_bar_to_bottom_css');
-add_action('wp_footer', 'stick_admin_bar_to_bottom_css');
+add_action( 'admin_init', 'stick_admin_bar_to_bottom_css' );
+add_action( 'wp_enqueue_scripts', 'stick_admin_bar_to_bottom_css' );
 
 ?>
