@@ -4,7 +4,7 @@ Donate link: http://coenjacobs.me/donate
 Tags: admin bar
 Requires at least: 3.1
 Tested up to: 3.3
-Stable tag: 1.1
+Stable tag: 1.2
 
 Annoyed by the new Admin Bar that is covering the top 28 pixels of your website, but you don't want it completely gone? This plugin sticks the Admin Bar to the bottom of your screen!
 
