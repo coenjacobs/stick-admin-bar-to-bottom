@@ -26,6 +26,9 @@ Annoyed by the new Admin Bar that is covering the top 28 pixels of your website,
 
 == Changelog ==
 
+= 1.2 =
+* Moved CSS to external file. Added file for < WP 3.3 backwards compat.
+
 = 1.1 =
 * Updated CSS for WordPress 3.3 compatibility
 
